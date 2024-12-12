@@ -1,9 +1,12 @@
 <header class="border-b shadow-md p-3 w-full">
     <div class="flex align-middle items-center justify-between max-w-screen-2xl mx-auto">
-        <img src="/images/logo.png" alt="app logo" class="max-h-16">
-        <nav class="flex gap-3 my-2 uppercase text-xl">
-            <a>Pradžia</a>
-            <a>Parduotuvė</a>
+        <img routerLink="/" src="/images/logo.png" alt="app logo" class="max-h-16">
+        <nav class="flex gap-3 my-2 uppercase text-2xl">
+            <a routerLink="/" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >Pradžia</a>
+            <a routerLink="/shop" routerLinkActive="active">Parduotuvė</a>
             <a>Kontaktai</a>
         </nav>
         <div class="flex gap-3 align-middle">
